@@ -1,7 +1,7 @@
 ## Evidence Vault + Request Fulfillment UI (Phase A)
 Overview
 
-This project is a React/Next.js application demonstrating SentryLink Comply Phase A for a Factory user.
+This project is a Next.js application demonstrating SentryLink Comply Phase A for a Factory user.
 It includes 3 main screens with mock data and local state management.
 
 ## Screens
