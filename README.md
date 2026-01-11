@@ -1,16 +1,21 @@
-Evidence Vault + Request Fulfillment UI (Phase A)
+## Evidence Vault + Request Fulfillment UI (Phase A)
 Overview
 
-This project is a small React/Next.js application demonstrating SentryLink Comply Phase A for a Factory user.
-It includes 3 main screens with mock data and local state management:
+This project is a React/Next.js application demonstrating SentryLink Comply Phase A for a Factory user.
+It includes 3 main screens with mock data and local state management.
 
-Evidence Vault – Displays a table of documents with filters, search, and bulk actions.
+## Screens
 
-Evidence Detail + Versions – Shows document metadata and version history; allows uploading new versions.
+Evidence Vault
+Displays a table of documents with filters, search, and bulk actions.
 
-Buyer Request To-Do – Displays request items with a “Fulfill” action to select evidence or create new mock evidence.
+Evidence Detail + Versions
+Shows document metadata and version history; allows uploading new versions.
 
-Reusable components:
+Buyer Request To-Do
+Displays request items with a “Fulfill” action to select evidence or create new mock evidence.
+
+## Reusable Components
 
 Button
 
@@ -20,8 +25,8 @@ StatusChip
 
 Table
 
-Features
-Evidence Vault (List)
+## Features
+1. Evidence Vault (List)
 
 Table columns: Doc Name | Doc Type | Status | Expiry | Versions | Last Updated | Actions
 
@@ -33,13 +38,13 @@ Bulk select + “Add to Pack” button (displays selected count)
 
 Filters optionally persist in URL query string
 
-Evidence Detail + Versions
+2. Evidence Detail + Versions
 
 Shows metadata and status chip
 
 Version list: date, uploader, notes, file size
 
-“Upload New Version” button opens a modal:
+Upload New Version modal with fields:
 
 Notes (required)
 
@@ -47,11 +52,11 @@ Expiry date (optional)
 
 File input (mock)
 
-Buyer Request To-Do
+3. Buyer Request To-Do
 
 List of request items: docType, due date, status
 
-“Fulfill” action opens modal:
+Fulfill action modal:
 
 Choose existing evidence from vault OR create new evidence (mock)
 
@@ -64,12 +69,12 @@ Node.js >= 18.x
 
 npm or yarn
 
-Installation
-# Clone repo
+## Installation
+Clone the repository
 git clone <your-repo-url>
 cd <repo-folder>
 
-# Install dependencies
+## Install dependencies
 npm install
 # or
 yarn install
@@ -82,7 +87,7 @@ yarn dev
 
 
 Open http://localhost:3000
- to view in your browser.
+ in your browser.
 
 Building for Production
 npm run build
